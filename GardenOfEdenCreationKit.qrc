@@ -1,0 +1,7 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+<file>images/greenLedOn.png</file>
+<file>images/greenLedOff.png</file>
+<file>images/redLedOn.png</file>
+</qresource>
+</RCC>

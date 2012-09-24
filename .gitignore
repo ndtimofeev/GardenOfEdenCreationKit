@@ -1,0 +1,4 @@
+*.o
+ui_*.h
+.clang_complete
+
