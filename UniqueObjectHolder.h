@@ -84,7 +84,6 @@ private:
         {
             UniqueObjectHolder::mapPtr->remove( UniqueObjectHolder::mapPtr->key( obj ) );
             delete obj;
-            qDebug() << obj << "deleted";
         }
 
         mutex.unlock();

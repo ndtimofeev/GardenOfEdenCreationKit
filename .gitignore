@@ -1,4 +1,8 @@
 *.o
 ui_*.h
 .clang_complete
-
+CMakeLists.txt
+*.cmake
+Makefile
+CMakeFiles/*
+CMakeCache.txt

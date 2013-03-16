@@ -17,10 +17,12 @@
 
 LedIndicator::LedIndicator( QWidget* parent ) :
     QAbstractButton( parent ),
-    good( ":images/greenLedOn.png" ),
-    bad( ":images/redLedOn.png" ),
-    off( ":images/greenLedOff.png" )
+    good( ":/images/greenLedOn.png" ),
+    bad( ":/images/redLedOn.png" ),
+    off( ":/images/greenLedOff.png" )
 {
+    Q_INIT_RESOURCE( GardenOfEdenCreationKit );
+
     this->setMaximumSize( 21, 21 );
     this->setCheckable( true );
 }

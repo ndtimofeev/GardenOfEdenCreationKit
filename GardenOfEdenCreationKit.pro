@@ -7,22 +7,40 @@ include( ../../SelfWriter.pri )
 TEMPLATE = lib
 CONFIG += static create_pc create_prl
 TARGET = GardenOfEdenCreationKit
-DEPENDPATH += .
+DEPENDPATH += $$PWD
 INCLUDEPATH += .
 
 # Input
 HEADERS += \
+    Bits.h \
     ConnectionHolder.h \
+    CustomizableItemDelegate.h \
+    CustomizableSignalTransition.h \
+    CustomizableSpinBox.h \
+    CustomizableState.h \
     LedIndicator.h \
-    SetExt.h \
-    SmartPointers.h \
-    Waiter.h \
     MapExt.h \
-    UniqueObjectHolder.h \
+    ScopedPropertyRollback.h \
+    SetExt.h \
+    SignalTransition.h \
+    SmartPointers.h \
     TypeTricks.h \
-    VariantExt.h
+    UniqueList.h \
+    UniqueObjectHolder.h \
+    Validator.h \
+    VariantExt.h \
+    Waiter.h \
 
-SOURCES += ConnectionHolder.cpp LedIndicator.cpp Waiter.cpp
+SOURCES += \
+    ConnectionHolder.cpp \
+    CustomizableItemDelegate.cpp \
+    CustomizableSpinBox.cpp \
+    CustomizableState.cpp \
+    LedIndicator.cpp \
+    ScopedPropertyRollback.cpp \
+    Validator.cpp \
+    Waiter.cpp \
+
 RESOURCES += GardenOfEdenCreationKit.qrc
 
 copyToDestdir( $${HEADERS} )
